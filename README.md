@@ -4,7 +4,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.2.0-61dafb)](https://reactjs.org/)
 [![CSS Modules](https://img.shields.io/badge/CSS%20Modules-Scoped-orange)](https://github.com/css-modules/css-modules)
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000)](https://vercel.com/)
+[![Netlify](https://img.shields.io/badge/Deployed%20on-netlify-000000)](https://netlify.com/)
 
 Um site profissional e performático para Letícia Ferreira, especialista em pilates, yoga e treinamento pessoal. Construído com tecnologias modernas, focando em performance, acessibilidade e experiência do usuário excepcional.
 
