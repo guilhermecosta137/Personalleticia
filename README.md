@@ -22,13 +22,7 @@ Um site profissional e performático para Letícia Ferreira, especialista em pil
 
 ## 🎯 Visão Geral
 
-Este projeto representa uma reestruturação completa do site pessoal, migrando de uma abordagem baseada em Tailwind CSS para uma arquitetura mais robusta e performática utilizando CSS Modules e variáveis CSS nativas. O foco principal foi criar uma base sólida para escalabilidade, manutenção e experiência do usuário premium.
-
-### Mudanças Principais
-
-#### ❌ Removido
-- Tailwind CSS (runtime overhead)
-- Emojis (inconsistência visual)
+Este projeto baseia numa arquitetura mais robusta e performática utilizando CSS Modules e variáveis CSS nativas. O foco principal foi criar uma base sólida para escalabilidade, manutenção e experiência do usuário premium.
 
 #### ✅ Adicionado
 - **CSS Modules** - Estilos modulares e scoped para evitar conflitos
