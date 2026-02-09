@@ -1,0 +1,132 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  padding: 1rem 2rem;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Primary Button */
+.primary {
+  background-color: var(--color-verde-principal);
+  color: var(--color-branco);
+  box-shadow: var(--shadow-sm);
+}
+
+.primary:hover:not(:disabled) {
+  background-color: var(--color-verde-medio);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Primary Large */
+.primaryLarge {
+  composes: primary;
+  padding: 1.25rem 2.5rem;
+  font-size: var(--fs-body-lg);
+}
+
+/* Primary Huge */
+.primaryHuge {
+  composes: primary;
+  padding: 1.5rem 3rem;
+  font-size: var(--fs-heading-sm);
+  font-weight: 600;
+}
+
+/* Outline Button */
+.outline {
+  background-color: transparent;
+  color: var(--color-verde-principal);
+  border: 2px solid var(--color-verde-principal);
+}
+
+.outline:hover:not(:disabled) {
+  background-color: var(--color-verde-principal);
+  color: var(--color-branco);
+}
+
+.outline:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Ghost Button */
+.ghost {
+  background-color: transparent;
+  color: var(--color-verde-principal);
+  border: none;
+}
+
+.ghost:hover:not(:disabled) {
+  background-color: rgba(76, 175, 80, 0.1);
+}
+
+/* Icon alignment */
+.button svg {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+/* Loading state */
+.button[data-loading="true"] {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+.button[data-loading="true"]::after {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button {
+    padding: 0.875rem 1.75rem;
+  }
+  
+  .primaryLarge {
+    padding: 1rem 2rem;
+  }
+  
+  .primaryHuge {
+    padding: 1.25rem 2.5rem;
+  }
+}

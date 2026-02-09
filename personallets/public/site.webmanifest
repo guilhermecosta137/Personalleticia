@@ -1,0 +1,16 @@
+{
+  "name": "Leticia Ferreira - Personal Trainer",
+  "short_name": "Leticia Ferreira",
+  "description": "Personal Trainer especializada em Pilates e Treinamento Funcional",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/personal.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
